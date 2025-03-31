@@ -2,6 +2,7 @@ let caracteres = "";
 let contrasena = "";
 let btn = document.querySelector("#btn");
 let rdo = document.querySelector("#rdo");
+let mensaje = document.querySelector("span");
 let todasLm = "abcdefghijklmnopqrstuvwxyz";
 let todasLM = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let todosN = "0123456789";
@@ -36,4 +37,12 @@ btn.addEventListener("click", () => {
     
     contrasena = "";
     caracteres = "";
+});
+
+document.querySelector("#copiar").addEventListener("click", () => {
+    navigator.clipboard.writeText(rdo.value)
+    mensaje.textContent = "Contraseña copiada al portapapeles";
+    setTimeout(() => {
+        mensaje.textContent = "";
+    }, 2000);
 });

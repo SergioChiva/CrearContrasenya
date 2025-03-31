@@ -44,5 +44,6 @@ form{
 }
 
 span{
-    color: lightgreen;
+    color: limegreen;
+    font-size: 0.8em;
 }

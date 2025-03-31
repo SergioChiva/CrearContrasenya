@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+h1{
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+form{
+    position: relative;
+    margin: 20px auto;
+    padding: 50px;
+    border: 1px solid black;
+    width: 300px;
+    color: black;
+    background-color: lightgray;
+}
+.numer, .simbol{
+    position: absolute;
+    top: 50px;
+}
+
+#rdo{
+    width: 200px;
+}

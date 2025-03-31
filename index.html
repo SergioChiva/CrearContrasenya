@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Generador de Contraseñas</title>
+</head>
+<body>
+    <h1>Generador de Contraseñas</h1>
+    <form id="requisitos">
+        <label for="longitud">Inserta la longitud para tu contraseña: </label><br><br>
+        <input value="8" type="number" id="longitud" name="longitud" min="1" max="100" required>
+        <br><br>
+        
+        <label for="caracteres">Elige que carácteres deseas en tu contraseña </label>
+        <br><br>
+        
+        <input type="checkbox" name="caracteres" id="letrasM">
+        <label for="letrasM" class="caracter">Letras mayúsculas</label><br>
+        <input type="checkbox" name="caracteres" id="letras_m">
+        <label for="letras_m" class="caracter">Letras minúsculas</label><br>
+        <input type="checkbox" name="caracteres" id="numeros">
+        <label for="numeros" class="caracter">Números</label><br>
+        <input type="checkbox" name="caracteres" id="simbolos">
+        <label for="simbolos" class="caracter">Símbolos</label>
+        <br><br>
+
+        <input type="button" name="btn" id="btn" value="Generar contraseña">
+        <br><br>
+
+        <label for="rdo">Tu contraseña es:</label>
+        <input type="text" id="rdo" name="rdo" readonly>
+        <br><br>
+
+        <button id="copiar">Copiar</button>
+    </form>
+</body>
+</html>
